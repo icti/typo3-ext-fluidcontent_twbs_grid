@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Fluid Content: Zurb Foundation 4 Grid',
+	'title' => 'Fluid Content: Twitter Bootstrap Grid',
 	'description' => '',
 	'category' => 'misc',
 	'author' => 'Jose Antonio Guerra',
@@ -30,9 +30,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '1.0.0',
 	'constraints' => array(
 		'depends' => array(
-			'extbase' => '6.0',
-			'fluid' => '6.0',
-			'typo3' => '6.0',
+			'fluidcontent' => '4.0',
 		),
 		'conflicts' => array(
 		),

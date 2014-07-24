@@ -1,10 +1,10 @@
-Fluid Content Elements for Zurb Foundation 4 (Grid)
+Fluid Content Elements for Twitter Bootstrap (Grid)
 ============================================
 
 What is it?
 -----------
 
-A collection of Zurb Foundation 4 grid oriented Fluid Content Elements written for `EXT:fluidcontent`.
+A collection of Twitter Bootstrap 4 grid oriented Fluid Content Elements written for `EXT:fluidcontent`.
 
 What does it do?
 -----------
@@ -34,3 +34,13 @@ References
 -----------
 
 * https://github.com/FluidTYPO3/fluidcontent is a dependency - it is the integration necessary to render Fluid Content Elements
+
+
+Migrating from 'EXT:fluidcontent_zf4_grid'
+----------
+
+Aplly the following SQL::
+
+    UPDATE tt_content
+    SET tx_fed_fcefile = REPLACE(tx_fed_fcefile, 'fluidcontent_zf4_grid', 'fluidcontent_twbs_grid')
+    WHERE tx_fed_fcefile REGEXP '^fluidcontent_zf4_grid:.*'
