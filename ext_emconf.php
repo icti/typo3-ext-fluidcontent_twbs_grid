@@ -27,10 +27,12 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 	'constraints' => array(
 		'depends' => array(
-			'fluidcontent' => '4.0',
+			'fluidcontent' => '4.1.0-4.99.99',
+			'vhs' => '2.2.0-2.99.99',
+			'flux' => '7.1.0-7.99.99',
 		),
 		'conflicts' => array(
 		),
