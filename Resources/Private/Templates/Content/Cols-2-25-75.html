@@ -7,16 +7,15 @@
      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
 
 		 <f:section name="Configuration">
-				 <flux:form wizardTab="TWBS Grid" id="cols-2-25-75" 
-						 icon="{v:extension.path.resources(path: 'Icons/Cols-2-25-75.png')}"
+				 <flux:form id="cols-2-25-75" 
+						options="{group:'TWBS Grid', icon:'../typo3conf/ext/fluidcontent_twbs_grid/Resources/Public/Icons/Cols-2-25-75.png'}"
 						 label="2 columnas (25/75)" description="">
 
 						 <flux:grid>
 										 <flux:grid.row>
 												 <flux:grid.column style="width: 25%" name="content.0" label="Columna" />
 												 <flux:grid.column style="width: 75%" name="content.1" label="Columna" />
-										 </flux:grid.column>
-								 </flux:grid.row>
+										 </flux:grid.row>
 						 </flux:grid>
 
 				 </flux:form>
